@@ -59,6 +59,7 @@ public class Graph {
         return adj.get(u).contains(v);
     }
 
+    // Perform Depth-First Search (DFS) traversal 
     public List<Integer> dfs(int v) {
         List<Integer> result = new ArrayList<>();
         boolean[] visited = new boolean[V];
@@ -77,6 +78,7 @@ public class Graph {
         }
     }
 
+    // Perform Breadth-First Search (BFS) traversal 
     public List<Integer> bfs(int v) {
         List<Integer> result = new ArrayList<>();
         boolean[] visited = new boolean[V];
